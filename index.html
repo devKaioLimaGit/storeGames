@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Games</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/icon/cranio.ico" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--FONTES-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--JAVASCRIPT-->
+  <script src="assets/js/script.js" type="module" defer></script>
+  <script src="assets/js/carrosel.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1><a href="index.html">Store<span>.Games</span></a></h1>
+      </div>
+      <div class="search">
+        <input id="pesquisa" type="text" placeholder="Pesquisa...">
+      </div>
+      <div class="hamburger">
+        <span id="span"></span>
+        <span id="span"></span>
+        <span id="span"></span>
+      </div>
+  </header>
+  <main id="main">
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <a href="index.html"><img src="assets/img/slide-show/cropped-1920-1080-412703.jpg" alt="Slide 1"></a>
+        </div>
+        <div class="slide">
+          <img src="assets/img/slide-show/cropped-1920-1080-597965.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="assets/img/slide-show/cropped-1920-1080-740347.jpg" alt="Slide 3">
+        </div>
+      </div>
+
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <section class="section-games-01"></section>
+  </main>
+
+  <footer>
+    <span>
+      &copy; Store.Game, 2022 - Todos os direitos reservados.
+    </span>
+  </footer>
+</body>
+
+</html>

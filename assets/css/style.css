@@ -1,0 +1,683 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+
+  width: 12px;               /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #222;        /* cor da área de rastreamento da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;    /* cor do botão da barra de rolagem */
+  border-radius: 20px;       /* arredondamento do botão da barra de rolagem */
+  border: 3px solid white;  /* cria um espaçamento ao redor do botão da barra de rolagem */
+}
+
+
+#main{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main2{
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.bloco{
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.selecione{
+  width: 50%;
+  padding: 1em;
+  color: white;
+  background-color: #000;
+}
+
+.div-absoluta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+.bloco:hover{
+  background-color: green;
+  background-color: #000;
+  transition: 0.5s ease-in;
+}
+
+.bloco:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+
+header {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #222;
+  padding: 10px;
+  
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.logo h1 {
+  font-weight: 200;
+  color: #fff;
+}
+
+.logo span {
+  font-weight: 200;
+  color: rgb(138, 255, 173);
+}
+
+header .search {
+  width: 100%;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .search input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #000;
+  padding-left: 20px;
+  padding: 14px;
+}
+
+header .search input::placeholder {
+  color: #000;
+}
+
+header .search input:hover {
+  background-color: green;
+  transition: 1s linear;
+}
+
+.hamburger{
+  margin-top: 10px;
+  position: relative;
+  right: 0px;
+  top: 50%;
+  bottom: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+
+#span{
+  display: block;
+  margin: 4px;
+  background-color: white;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  transition: all .3s linear;
+
+}
+
+#span:hover{
+  background-color: green;
+}
+
+.hamburgerPiece1{
+  position: absolute;
+  rotate: 45deg;
+}
+.hamburgerPiece2{
+  position: absolute;
+  rotate: -45deg;
+}
+
+
+.hamburger-baixo{
+  transition: all .3s linear;
+  margin-top: 25px;
+  position: relative;
+  right: 0px;
+  top: 50%;
+  bottom: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+
+.barra-lateral{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .3s linear;
+  position: absolute;
+  top: 96px;
+  right: 0;
+  width: 300px;
+  height: 500px;
+  background-color: #222;
+}
+
+.listadoMenu{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.botaoMenu{
+  margin-top: 20px;
+  background-color: green;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  outline: none;
+}
+
+.botaoMenu:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+
+.titulo-game {
+  font-weight: 200;
+  background-color: #000;
+  text-align: center;
+  font-size: 16px;
+}
+
+.titulo-game:hover {
+  color: rgb(138, 255, 173);
+  transition: 1ms;
+}
+
+.section-games-01 {
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-games-02 {
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  margin: 0 auto;
+  width: 800px;
+  display: grid;
+  gap:  30px;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.cards-section-games-01 {
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 20px;
+  border: 8px solid #000;
+  margin-left: 10px;
+}
+
+.cards-section-games-01:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.btn-download:hover,
+.btn-voltar:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.titulo-jogo {
+  margin: 10px;
+  text-align: center;
+}
+
+.descrição {
+  color: #ffff;
+  margin: 20px;
+  width: 50%;
+  text-align: justify;
+}
+
+.requisitos {
+  color: #ffff;
+  margin: 20px;
+  width: 50%;
+  text-align: justify;
+
+}
+
+.btn-download {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  background-color: green;
+  margin: 10px;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.btn-voltar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  background-color: green;
+  color: #fff;
+  margin: 10px;
+  width: 25%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.detalhes-jogo-corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .logo h1 {
+    margin-bottom: 10px;
+  }
+
+  header .search {
+    margin-bottom: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hamburger-baixo{
+    transition: all .3s linear;
+    margin-top: 25px;
+    position: relative;
+    right: 0px;
+    top: 50%;
+    bottom: 50%;
+    width: 50px;
+    height: 50px;
+  
+  }
+  
+  .barra-lateral{
+    display: flex;
+    flex-direction: column;
+    transition: all .3s linear;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    width: 300px;
+    height: 500px;
+    background-color: #222;
+  }
+  
+  .listadoMenu{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .botaoMenu{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: green;
+    color: #fff;
+    margin-top: 20px;
+    background-color: green;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    outline: none;
+  }
+  
+  .botaoMenu:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .barra-lateral{
+    display: flex;
+    flex-direction: column;
+    transition: all .3s linear;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    width: 300px;
+    height: 500px;
+    background-color: #222;
+  }
+  .descrição {
+    color: #ffff;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  
+  .requisitos {
+    color: #ffff;
+    margin: 20px;
+    width: 50%;
+    text-align: center;
+  
+  }
+
+  .btn-download {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: green;
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+  }
+  .btn-voltar {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    margin: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  footer{
+    margin-top: 20px;
+    background-color: #222;
+    padding: 16px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer span{
+    text-align: center;
+    font-size: 0.1em;
+    font-weight: 200;
+  }
+  
+
+}
+
+
+footer{
+  margin-top: 20px;
+  background-color: #222;
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer span{
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.carousel {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.slide-transition {
+  animation: slideAnimation 0.5s;
+}
+
+@keyframes slideAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 414px){
+  .barra-lateral{
+    display: flex;
+    flex-direction: column;
+    transition: all .3s linear;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 300px;
+    height: 500px;
+    background-color: #222;
+  }
+}
+@media screen and (max-width: 375px){
+  .barra-lateral{
+    display: flex;
+    flex-direction: column;
+    transition: all .3s linear;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    width: 300px;
+    height: 500px;
+    background-color: #222;
+  }
+  .descrição {
+    color: #ffff;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  
+  .requisitos {
+    color: #ffff;
+    margin: 20px;
+    width: 50%;
+    text-align: center;
+  
+  }
+
+  .btn-download {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: green;
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+  }
+  .btn-voltar {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    margin: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  footer{
+    margin-top: 20px;
+    background-color: #222;
+    padding: 16px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer span{
+    text-align: center;
+    font-size: 0.1em;
+    font-weight: 200;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:800px){
+  .section-games-02 {
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    margin: 0 auto;
+    width: 600px;
+    display: grid;
+    gap:  30px;
+    grid-template-columns: repeat(3, 1fr);
+  
+  }
+}
+
+@media screen and (max-width:600px){
+  .section-games-02 {
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    margin: 0 auto;
+    width: 400px;
+    display: grid;
+    gap:  30px;
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+}
+
+
+@media screen and (max-width:375px){
+  .section-games-02 {
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    margin: 0 auto;
+    width: 320px;
+    display: grid;
+    gap:  30px;
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+}
